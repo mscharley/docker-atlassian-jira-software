@@ -3,11 +3,11 @@ FROM isuper/java-oracle:jre_8
 MAINTAINER Matthew Scharley <matt.scharley@gmail.com>
 
 # Variables.
-ARG JIRA_VERSION=7.0.4
-ARG PGSQL_VERSION=9.4-1206
-ARG MYSQL_CONNECTOR_VERSION=5.1.38
-ENV JIRA_HOME    /var/atlassian/jira-software
-ENV JIRA_INSTALL /opt/atlassian/jira-software
+ENV JIRA_VERSION            7.0.4
+ENV PGSQL_VERSION           9.4-1206
+ENV MYSQL_CONNECTOR_VERSION 5.1.38
+ENV JIRA_HOME               /var/atlassian/jira-software
+ENV JIRA_INSTALL            /opt/atlassian/jira-software
 
 RUN set -x && \
     mkdir -p ${JIRA_HOME} && \
